@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}IFTA Tax Calculator{% endblock %}
+
+{% block content %}
+    <h1>IFTA Tax Calculation Service</h1>
+
+    <!-- Lorem Ipsum Heading 1 -->
+    <h3>Lorem Ipsum Title 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Donec consectetur risus sed nisi dignissim, sed sollicitudin metus posuere.</p>
+
+    <!-- Lorem Ipsum Heading 2 -->
+    <h3>Lorem Ipsum Title 2</h3>
+    <p>Quisque vehicula libero at dui viverra, at feugiat libero faucibus. Nulla facilisi. Sed auctor lectus vel arcu pharetra, vitae volutpat magna volutpat.</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

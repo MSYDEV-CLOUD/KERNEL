@@ -1,0 +1,78 @@
+/* General layout styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;               /* Full width */
+    background-color: #101010;     /* Dark background */
+    overflow: hidden;           /* Ensure no overflow */
+    text-align: center;         /* Center the nav links */
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style-type: none;      /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;              /* Flexbox for even distribution */
+    justify-content: space-around; /* Space links evenly */
+}
+
+.navbar li {
+    flex: 1;                    /* Each item takes equal space */
+}
+
+.navbar a {
+    font-size: 18px;
+    display: block;
+    padding: 14px 20px;         /* Padding around the links */
+    color: white;               /* Text color */
+    text-align: center;         /* Center text */
+    text-decoration: none;      /* Remove underline */
+}
+
+.navbar a:hover {
+    background-color: #6a6b67;  /* Hover effect */
+}
+
+/* Main container layout */
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar-left, .sidebar-right {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-right {
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+.content {
+    width: 60%;
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #101010;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+}

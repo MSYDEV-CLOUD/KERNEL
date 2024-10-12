@@ -1,0 +1,45 @@
+# Python
+*.py[cod]
+*.pyc
+__pycache__/
+
+# Django specific
+db.sqlite3
+*.log
+*.pot
+*.py[cod]
+
+# Migrations
+*/migrations/*.pyc
+*/migrations/*.py
+!/migrations/__init__.py
+
+# Environments
+.env
+*.env
+venv/
+.venv/
+
+# Static files
+/static/
+staticfiles/
+
+# Media files
+/media/
+mediafiles/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# AWS Elastic Beanstalk specific
+.elasticbeanstalk/
+
+# Environment variables
+.env

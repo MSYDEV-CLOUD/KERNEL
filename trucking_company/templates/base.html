@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}MC2 Trucking Company{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="{% url 'news_home' %}">News</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'ifta_service' %}">IFTA Calculator</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area with Sidebars -->
+    <div class="container">
+      <div class="sidebar-left">
+        {% block sidebar_left %}
+
+        <h3>Quo quaerat accusamus aut pariatur nulla in esse dolorem.</h3>
+        <p>
+          Lorem ipsum dolor sit amet. Ea quis galisumEst corporis et iusto sequi
+          ex ipsa eveniet est enim repellat ex perspiciatis minima. Sed deleniti
+          aspernatur
+          <a href="https://www.loremipzum.com" target="_blank"
+            >Ab architecto sit animi iusto non iure illo</a
+          >. In fugit placeat in quidem quaeratRem voluptates.
+        </p>
+        <h3>Et iusto numquam id accusantium delectus et culpa nulla.</h3>
+        <p>
+          Quo reprehenderit nequeIn minima qui debitis consectetur? Ut quas
+          officiaNon accusamus sit sapiente asperiores non assumenda repellendus
+          sit aliquid velit et similique porro. Ut odit dolores nam Quis
+          nostrumcum vero qui autem maiores. Non recusandae dolor ea officia
+          evenietaut perspiciatis quo quibusdam iure.
+        </p>
+        <h3>Aut illo excepturi sit voluptas quas.</h3>
+        <p>
+          Aut blanditiis ipsaHic aspernatur et sunt quia ut dolorum consequatur
+          et placeat quae qui nihil inventore. Et magni odio ut itaque
+          consequatur
+          <a href="https://www.loremipzum.com" target="_blank">Sed sint</a>.
+        </p>
+        <h4>Qui excepturi amet qui deleniti obcaecati.</h4>
+        <p>
+          Sed magnam mollitiaEst repudiandae vel rerum dolore aut accusantium
+          velit? Quo distinctio commodi et laboriosam quas
+          <a href="https://www.loremipzum.com" target="_blank"
+            >Qui voluptatibus et ipsam Quis aut tenetur quia</a
+          >.
+        </p>
+        <h5>Ab dolor unde ad corrupti distinctio.</h5>
+        <p>
+          Est quia enimquo quis eum culpa quisquam. Qui necessitatibus nesciunt
+          nam veritatis quiaaut quidem. Ut nesciunt velitEt aperiam est eveniet
+          omnis ea doloribus error hic internos voluptatem aut voluptatem vero.
+        </p>
+
+        {% endblock %}
+      </div>
+
+      <div class="content">
+        {% block content %}
+        <h1>Main Content Area</h1>
+        <p>Main content goes here.</p>
+        {% endblock %}
+      </div>
+
+      <div class="sidebar-right">
+        {% block sidebar_right %}
+        <p>
+          Lorem ipsum dolor sit amet. Et nesciunt possimus vel facilis nullaUt
+          laudantium in architecto repellat ut harum quos et minus quis sed
+          sequi dolore. Quo debitis aliquam
+          <em>At perferendis aut consequatur dignissimos ut unde odit</em> aut
+          laudantium dicta. Qui dolorem iste
+          <strong>Eos fuga vel saepe laborum qui voluptas ratione</strong> est
+          placeat nulla est deserunt asperiores id aperiam tenetur!
+        </p>
+        <p>
+          Aut optio autem
+          <strong>Ut minima et voluptatem esse aut modi deleniti</strong>. Et
+          fugiat nihil ea alias debitisin omnis At rerum molestiae. At sapiente
+          fugit ut veritatis corrupti
+          <em
+            >Qui aperiam qui debitis soluta qui sint animi ut maiores cumque</em
+          >.
+        </p>
+        <p>
+          Ut autem voluptatem
+          <em>Et beatae est officiis maxime vel voluptatum labore</em> ea fugiat
+          iste in tenetur quia? Est exercitationem perferendis
+          <strong>Et aperiam qui magni rerum et quam laborum</strong>!
+        </p>
+        <p>
+          Et dolor laudantium
+          <strong>Et sint ex ipsum temporibus ad aliquid totam</strong> qui
+          alias dolore qui dolorem autem. Vel nesciunt velitEst laboriosam est
+          quia obcaecati et sapiente asperiores. Qui tempora molestiae non
+          facere necessitatibus <em>Sit pariatur</em>! Rem enim iure et vero
+          vitaeQui accusantium eum assumenda fugit et nostrum voluptate sit odio
+          minus!
+        </p>
+        <p>
+          Eum commodi inventoreEt corporis id numquam optio sed illum dolorem
+          eos enim dolores. Nam harum molestiae
+          <em
+            >Qui natus 33 aliquid aspernatur ut dicta labore et dolorem quas</em
+          >.
+        </p>
+
+        {% endblock %}
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; MC2.COM. All rights reserved.</footer>
+  </body>
+</html>
