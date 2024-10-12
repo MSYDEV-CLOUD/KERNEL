@@ -43,3 +43,10 @@ mediafiles/
 
 # Environment variables
 .env
+# Virtual environment
+.venv/
+venv/
+
+# SSH keys or sensitive files
+*.pub
+id_rsa*
